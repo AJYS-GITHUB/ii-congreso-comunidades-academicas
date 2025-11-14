@@ -1,0 +1,14 @@
+{
+  "name": "congreso-landing-server",
+  "version": "1.0.0",
+  "scripts": {
+    "serve": "npx http-server src -p 3000 -o",
+    "build-css": "npx tailwindcss -i ./src/assets/input.css -o ./src/assets/output.css",
+    "watch-css": "npx tailwindcss -i ./src/assets/input.css -o ./src/assets/output.css --watch",
+    "dev": "npm run build-css && npm run serve"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "tailwindcss": "^4.1.17"
+  }
+}
