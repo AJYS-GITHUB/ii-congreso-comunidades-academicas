@@ -34,7 +34,7 @@
       </div>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden md:flex space-x-8 pb-4 border-t border-gray-700 pt-4">
+      <nav class="hidden md:flex space-x-8 pb-4 border-t border-gray-700 pt-4 items-center">
         <a href="#inicio" class="text-gray-300 hover:text-white font-medium transition-colors">Inicio</a>
         <a href="#congreso" class="text-gray-300 hover:text-white font-medium transition-colors">Sobre el Congreso</a>
         <a href="#objetivos" class="text-gray-300 hover:text-white font-medium transition-colors">Objetivos</a>
@@ -67,7 +67,12 @@
       <img 
         src="assets/images/hero-background.webp" 
         alt="Congreso Internacional de Comunidades Académicas" 
-        class="w-full h-auto object-contain"
+        class="w-full h-auto object-contain hidden md:block"
+      >
+      <img 
+        src="assets/images/hero-background-mobil.webp" 
+        alt="Congreso Internacional de Comunidades Académicas" 
+        class="w-full h-auto object-contain block md:hidden"
       >
       
       <!-- Contenido de texto posicionado absolutamente -->
@@ -197,7 +202,7 @@
       
       <!-- Navegación del Slider -->
       <div class="flex justify-center mb-8">
-        <div class="bg-white rounded-full p-1 shadow-lg">
+        <div class="bg-white rounded-2xl md:rounded-full p-1 shadow-lg">
           <button class="slider-nav-btn active px-6 py-2 rounded-full text-sm font-medium transition-all" data-day="1">
             Viernes 28 noviembre
           </button>
@@ -589,9 +594,9 @@
           No te pierdas esta oportunidad única de formar parte del II Congreso Internacional 
           de Comunidades Académicas. Regístrate ahora y asegura tu participación.
         </p>
-        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors duration-300 transform hover:scale-105">
+        <a href="https://inscripciones.ucv.edu.pe/wRegistroGeneral.aspx?idevento=988" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors duration-300 transform hover:scale-105">
           Inscríbete aquí
-        </button>
+        </a>
       </div>
     </div>
   </section>
